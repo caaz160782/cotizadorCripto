@@ -1,3 +1,4 @@
+import Formulario from './components/Formulario'
 import styled from '@emotion/styled'
 import ImagenCripto from './img/imagen-criptos.png'
 
@@ -46,6 +47,7 @@ function App() {
 
        <div>
        <Heading>  Cotiza CriptoMonedas al Instante </Heading>
+       <Formulario/>
        </div>
     </Contenedor>      
   )
