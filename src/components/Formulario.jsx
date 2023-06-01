@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 import { useState,useEffect } from 'react'
 import Error from './Error'
@@ -24,7 +25,7 @@ const InputSubmit =styled.input`
     }
 `
 
-const Formulario = () => {
+const Formulario = ({setMonedas}) => {
 
   const[criptos, setCriptos]=useState([]);
   const[error, setError]    =useState(false);
@@ -60,6 +61,7 @@ const Formulario = () => {
       return
     }
     setError(false)
+    setMonedas({moneda,criptoMoneda})
   }
 
    return (
